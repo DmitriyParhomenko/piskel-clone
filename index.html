@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Piskel clone</title>
+  <link rel="shortcut icon" href="favicon/favicon.ico" />
+  <link rel="stylesheet" href="css/style.bundle.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-item">
+        <a class="header-item-logo" href="#">
+          <img src="img/logo-site.png" alt="Piskel clone">
+        </a>
+      </div>
+      <div class="header-title">New Piskel</div>
+    </div> 
+  </header> 
+
+
+<div class="work-place">
+  <div class="tools">
+  <ul class="tools-container" data-tool="">
+    <li class="tools-container__tool" data-tool-name="pencil">
+      <img src="img/tools/pencil.svg" alt="pencil">
+    </li>
+    <li class="tools-container__tool" data-tool-name="circle">
+      <img src="img/tools/circle.svg" alt="circle">
+    </li>
+    <li class="tools-container__tool" data-tool-name="square">
+      <img src="img/tools/sqr.svg" alt="square">
+    </li>
+    <li class="tools-container__tool" data-tool-name="pipette">
+      <img src="img/tools/move.svg" alt="pipette">
+    </li>
+    <li class="tools-container__tool" data-tool-name="fill">
+      <img src="img/tools/back.svg" alt="fill">
+    </li>
+    <li class="tools-container__tool" data-tool-name="eraser">
+      <img src="img/tools/last.svg" alt="eraser">
+    </li>
+  </ul>
+</div>
+  <div class="preview-list">
+	<div class="preview-list-scroller">
+		<ul id="list" class="preview-list-sortable">
+			<li class="preview-list-tile" data-select-preview="0">
+				<div class="tile-view canvas">
+					<button class="preview-list-duplicate">
+							<img src="img/tools/duplicate.svg" alt="duplicate">
+					</button>
+					<button class="preview-list-delete">
+							<img src="img/tools/remove.svg" alt="duplicate">
+					</button>
+					<button class="preview-list-move">
+							<img src="img/tools/move.svg" alt="move">
+					</button>
+				</div>
+			</li>
+		</ul>
+		<input id="new_frame" type="button" value="New frame">
+	</div>
+</div>
+  <div class="drawing-area">
+  <canvas width="800" height="800" data-ceil-width="32" data-ceil-height="32" data-select-preview="0"></canvas>
+</div>
+  <div class="animated">
+  <div class="animated-preview"></div>
+  <div class="animated-preview__fps">
+    <label for="fps">10</label>
+    <span>FPS</span>
+    <input type="range" min="0" max="10" step="0.5" name="fps">
+  </div>
+</div>
+</div>
+
+    <!-- <footer>Dmitriy Parhomenko</footer> -->
+
+    <script src="js/bundle.js"></script>
+  </body>
+</html>
